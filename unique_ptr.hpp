@@ -12,5 +12,8 @@ public:
 	pointer(pointer)
 	{}
 
-
+	T* operator->()
+	{
+		return this->pointer;
+	}
 };

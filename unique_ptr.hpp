@@ -12,6 +12,11 @@ public:
 	pointer(pointer)
 	{}
 
+	~unique_ptr()
+	{
+		delete this->pointer;
+	}
+
 	T* operator->()
 	{
 		return this->pointer;
